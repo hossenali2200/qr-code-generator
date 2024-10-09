@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
+
+    <main class="flex justify-center items-center mt-10 mb-10">
+        <section class="h-[600px] w-[400px] bg-slate-200">
+            <div class="h-[450px] w-[300px] mx-auto bg-slate-50 flex justify-center items-center mt-10 rounded-xl flex-col">
+                <div class="p-4 rounded-md">
+                    <img class="rounded-md" src="./images/image-qr-code.png" alt="">
+                </div>
+                <div class="w-11/12 text-center mt-2">
+                    <h1 class="text-xl font-bold">Improve your front-end <br>skills by building project</h1>
+                    <p class="text-xs mt-2 mb-8 text-slate-400">Scan the Qr code to visit frontend <br> mentor and take your coding skills to <br> the next levels </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
     
 </body>
 </html>
